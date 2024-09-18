@@ -1,1 +1,1 @@
-web: gunicorn home_decor_backend.wsgi --log-file -
+web: gunicorn home_decor_backend.wsgi:application --bind 0.0.0.0:$PORT --timeout 120
