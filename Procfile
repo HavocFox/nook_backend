@@ -1,0 +1,1 @@
+web: gunicorn home_decor_backend.wsgi --log-file -

@@ -1,0 +1,11 @@
+[phases.setup]
+run = "apt-get update && apt-get install -y libmysqlclient-dev build-essential python3-dev default-libmysqlclient-dev libssl-dev zlib1g-dev libjpeg-dev libffi-dev && pip install mysqlclient==2.1.0 && pip install -r requirements.txt"
+
+[phases.build]
+run = ""
+
+[phases.start]
+run = "gunicorn home_decor_backend.wsgi --log-file -"
+
+[python]
+version = "3.11"
