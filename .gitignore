@@ -1,0 +1,6 @@
+/__pycache__
+venv/
+serviceKey
+# Ignore Firebase service key
+home_decor_backend/serviceKey/*.json
+home-decor-frontend/
