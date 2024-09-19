@@ -6,9 +6,3 @@ run = "python manage.py collectstatic --noinput && python manage.py migrate"
 
 [phases.start]
 run = "gunicorn home_decor_backend.wsgi:application --bind 0.0.0.0:$PORT --timeout 120 --log-file -"
-
-{
-    "language": "python",
-    "pythonVersion": "3.11"
-}
-
